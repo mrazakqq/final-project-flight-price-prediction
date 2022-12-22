@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Estimate Your Fare Flight</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="../static/css/bootstrap.min.css" />
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="../static/css/style.css" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="booking" class="section">
+			<div class="section-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="booking-cta">
+								<h1>Book your flight today</h1>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at</p>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-offset-1">
+							<div class="booking-form">
+								<form method="post" action="/result">
+									<div class="form-group">
+										<div class="form-checkbox">
+											<label>
+												<input type="radio" name="stops" value="2" selected />
+												<span></span>Zero stop
+											</label>
+											<label>
+												<input type="radio" name="stops" value="0" />
+												<span></span>One stop
+											</label>
+											<label>
+												<input type="radio" name="stops" value="1" />
+												<span></span>Two or more stops
+											</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<span class="form-label">Travel class</span>
+												<select class="form-control" name="travel-class">
+													<option value="" selected disabled hidden>Choose here</option>
+													<option value="0">Business class</option>
+													<option value="1">Economy class</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<span class="form-label">Airline</span>
+												<select class="form-control" name="airline">
+													<option value="" selected disabled hidden>Choose here</option>
+													<option value="AirAsia">Air Asia</option>
+													<option value="Air_India">Air India</option>
+													<option value="GO_FIRST">Go First</option>
+													<option value="Indigo">Indigo</option>
+													<option value="SpiceJet">Spice Jet</option>
+													<option value="Vistara">Vistara</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<span class="form-label">Departure Date</span>
+												<input class="form-control" type="date" required name="departure-date" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<span class="form-label">Flying from</span>
+												<select class="form-control" name="source-city">
+													<option value="" selected disabled hidden>Choose here</option>
+													<option value="Bangalore">Bangalore</option>
+													<option value="Chennai">Chennai</option>
+													<option value="Delhi">Delhi</option>
+													<option value="Hyderabad">Hyderabad</option>
+													<option value="Kolkata">Kolkata</option>
+													<option value="Mumbai">Mumbai</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<span class="form-label">Flyning to</span>
+												<select class="form-control" name="destination-city">
+													<option value="" selected disabled hidden>Choose here</option>
+													<option value="Bangalore">Bangalore</option>
+													<option value="Chennai">Chennai</option>
+													<option value="Delhi">Delhi</option>
+													<option value="Hyderabad">Hyderabad</option>
+													<option value="Kolkata">Kolkata</option>
+													<option value="Mumbai">Mumbai</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<span class="form-label">Departure Time</span>
+												<input class="form-control" type="time" required name="departure-time" />
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<span class="form-label">Arrival Time</span>
+												<input class="form-control" type="time" required name="arrival-time" />
+											</div>
+										</div>
+									</div>
+									<div class="form-btn">
+										<!-- <input type="submit" value="ESTIMATE" class="submit-btn" />
+										<span class="ESTIMATE"></span> -->
+										<button class="submit-btn">estimate</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
