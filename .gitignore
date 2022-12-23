@@ -1,3 +1,4 @@
 *.pkl
 model/
 db/
+__pycache__/
